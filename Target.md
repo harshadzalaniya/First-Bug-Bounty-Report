@@ -47,10 +47,10 @@ In this room, the endpoint trusts the `user_id` parameter completely and returns
 - The target account (with 10 children) was found at `user_id = [REPLACE WITH THE ID YOU FOUND]`.
 
 **Proof of Concept Screenshots:**    
-- Screenshot 1: Logged in as `niels` (own account)  
-- Screenshot 2: After changing `user_id` → Another parent's data is displayed  
-- Screenshot 3: Burp Intruder results showing different response lengths  
-- Screenshot 4: Account with 10 children successfully accessed
+- Screenshot 1: Logged in as `niels` [own account](./Screenshot1.png)
+- Screenshot 2: After changing `user_id` → [Another parent's data is displayed](./Screenshot2.png)  
+- Screenshot 3: Burp Intruder results showing different response lengths [Respnose](Screenshot3.png)  
+- Screenshot 4: Account with 10 children successfully accessed [Success](Screenshot4.png)
 
 ### Expected Behavior
 - The server should perform proper authorization checks on every request before returning sensitive data. 
